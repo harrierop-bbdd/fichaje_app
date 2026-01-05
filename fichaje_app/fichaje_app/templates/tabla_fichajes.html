@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Tabla de Fichajes</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Todos los fichajes</h2>
+    <table border="1" cellpadding="5">
+        <tr>
+            <th>Usuario</th>
+            <th>Tipo</th>
+            <th>Fecha</th>
+            <th>Hora</th>
+        </tr>
+        {% for f in fichajes %}
+        <tr>
+            <td>{{ f.usuario }}</td>
+            <td>{{ f.tipo }}</td>
+            <td>{{ f.fecha }}</td>
+            <td>{{ f.hora }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/fichar">Volver</a>
+</body>
+</html>
