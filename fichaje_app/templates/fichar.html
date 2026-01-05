@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Fichar</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h2>Hola, {{ usuario }}</h2>
+    <form method="post">
+        <button name="tipo" value="Entrada">Entrada</button>
+        <button name="tipo" value="Pausa">Pausa</button>
+        <button name="tipo" value="Fin pausa">Fin pausa</button>
+        <button name="tipo" value="Salida">Salida</button>
+    </form>
+    <br>
+    <a href="/tabla">Ver tabla de fichajes</a><br>
+    <a href="/resumen">Resumen mensual</a><br>
+    <a href="/exportar">Exportar CSV</a><br>
+    <a href="/logout">Cerrar sesión</a>
+</body>
+</html>
